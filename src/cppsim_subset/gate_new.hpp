@@ -6,6 +6,7 @@
 
 #include "state.hpp"
 
+namespace subset {
 class QuantumGate {
 private:
     std::function<void(QuantumState*)> controller;
@@ -30,4 +31,5 @@ struct HGateController {
 QuantumGate* H_new(UINT target_qubit_index) {
     HGateController controller(target_qubit_index);
     return new QuantumGate(std::move(controller));
+}
 }

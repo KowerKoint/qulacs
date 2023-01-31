@@ -2,6 +2,7 @@
 
 #include <csim/memory_ops.hpp>
 
+namespace subset {
 class QuantumState {
 private:
     ITYPE _dim;
@@ -20,3 +21,4 @@ public:
     
     CTYPE* data() const { return _state_vector; }
 };
+}

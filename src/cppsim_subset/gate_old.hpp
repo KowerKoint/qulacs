@@ -8,6 +8,7 @@
 
 #include "state.hpp"
 
+namespace subset {
 class QuantumGateBase {
 protected:
     std::vector<UINT> _target_qubit_list;
@@ -31,3 +32,4 @@ public:
 };
 
 ClsHGate* H_old(UINT target_qubit_index) { return new ClsHGate(target_qubit_index); }
+}
