@@ -472,6 +472,7 @@ add_custom_target(shared
 	DEPENDS csim_shared
 	DEPENDS cppsim_shared
 	DEPENDS vqcsim_shared
+	DEPENDS cppsim_subset_shared
 )
 
 # python binding
